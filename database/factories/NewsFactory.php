@@ -5,7 +5,7 @@ namespace Database\Factories;
 use App\Models\News;
 use App\Modules\Core\ORM\Enums\NewsStatusEnum;
 use Faker\Generator;
-use Faker\Provider\ru_RU\Text;
+use Faker\Provider\en_US\Text;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Ramsey\Uuid\Uuid;
 

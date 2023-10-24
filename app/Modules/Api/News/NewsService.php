@@ -59,7 +59,7 @@ class NewsService implements NewsServiceContract
      */
     public function activeToggle(string $id): News
     {
-        if ( ! $article = News::find($id)) {
+        if ( ! $article = $this->newsRepository->getOneById($id)) {
             throw new ArticleNotFoundException;
         }
 

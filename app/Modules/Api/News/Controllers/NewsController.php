@@ -39,9 +39,9 @@ class NewsController extends Controller
     /**
      * @param  string  $id
      *
-     * @return NewsResource
+     * @return NewsResource|JsonResponse
      */
-    public function getOneArticleById(string $id): NewsResource
+    public function getOneArticleById(string $id): NewsResource | JsonResponse
     {
         try {
             $article = $this->newsService->getOneArticleById($id);
