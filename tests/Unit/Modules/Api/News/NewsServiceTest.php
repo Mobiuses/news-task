@@ -6,13 +6,14 @@ namespace Modules\Api\News;
 
 use App\Modules\Api\News\Contracts\NewsServiceContract;
 use App\Modules\Api\News\Exceptions\ArticleNotFoundException;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\App;
 use Illuminate\Foundation\Testing\TestCase;
 use Tests\CreatesApplication;
 
 class NewsServiceTest extends TestCase
 {
-    use CreatesApplication;
+    use CreatesApplication, RefreshDatabase;
 
     /**
      * @var NewsServiceContract|mixed

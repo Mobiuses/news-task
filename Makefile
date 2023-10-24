@@ -7,8 +7,8 @@ build:
 	make docker-build
 	make composer-install
 	make front-build
-	make migrate-fresh
 	make test
+	make migrate-fresh
 	make fix-permissions
 
 composer-require:
