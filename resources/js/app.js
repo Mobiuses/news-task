@@ -8,8 +8,8 @@ const app = createApp(App);
 app.use(VueAxios, axios);
 
 const routes = [
-    { path: '/', component: () => import('./components/NewsItemContainer.vue') },
-    { path: '/article/:id', component: () => import('./components/NewsArticle.vue') }
+    { path: '/', component: () => import('./Components/NewsItemContainer.vue') },
+    { path: '/article/:id', component: () => import('./Components/NewsArticle.vue') }
 ]
 
 const router = createRouter({

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import NewsItemContainer from './components/NewsItemContainer.vue'
+import NewsItemContainer from './Components/NewsItemContainer.vue'
 
 export default {
     name: 'app',
