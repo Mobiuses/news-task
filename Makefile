@@ -2,6 +2,14 @@ SHELL ?= /bin/bash
 
 ARGS = $(filter-out $@,$(MAKECMDGOALS))
 
+build:
+	cp .env.local .env
+	make docker-build
+	make composer-install
+	make migrate-fresh
+	make front-build
+	make test
+
 composer-require:
 	docker-compose run composer composer require ${ARGS}
 
@@ -29,8 +37,8 @@ npm-r:
 	docker-compose run --user node front npm remove ${ARGS}
 
 front-build:
+	docker-compose run --user node front npm install
 	docker-compose run --user node front npm run build
-
 
 migrate-fresh:
 	docker-compose exec php php artisan migrate:fresh --seed
