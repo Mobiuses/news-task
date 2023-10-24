@@ -3,7 +3,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">{{ this.article.title }}</h5>
+                    <h5 class="card-title" @click="viewArticlePage(this.article.id)">{{ this.article.title }}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">{{ this.article.short_description}}</h6>
                     <div class="row card-datetime-row">
                         <div class="col-6">

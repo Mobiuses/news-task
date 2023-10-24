@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
 
 .title {
     text-align: center;
@@ -11,6 +11,9 @@
 }
 .card-title {
     margin-bottom: 20px;
+}
+.card-title:hover {
+    cursor: pointer;
 }
 .title-date {
     float: right;
