@@ -1,9 +1,8 @@
 <h3>News test task</h2>
 
-1) Build the project
-2) 
-    ``make build``
-3) if doesn't have ``make`` do plain docker-compose commands
+1) Build the project: ``make build``
+
+2) if doesn't have ``make`` do plain docker-compose commands
 ```
 cp .env.local .env
 docker-compose build
